@@ -29,8 +29,8 @@ fn all_unique(board: &[u8; 8]) -> bool {
 fn check_diags(board: &[u8; 8]) -> bool {
     for i in 0..7 {
         for j in i + 1..8 {
-            let x_diff = (board[i] - board[j]) as i8;
-            let y_diff = (i - j) as i8;
+            let x_diff = board[i] as i8 - board[j] as i8;
+            let y_diff = i as i8 - j as i8;
             if x_diff.abs() == y_diff.abs() {
                 return false;
             }
