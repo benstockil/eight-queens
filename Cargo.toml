@@ -1,0 +1,14 @@
+[package]
+name = "eight-queens"
+version = "0.1.0"
+authors = ["Ben Stockil <benstockil@outlook.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+itertools = "0.10.0"
+
+[[bin]]
+name = "eight-queens"
+path = "main.rs"
